@@ -22,14 +22,9 @@ def bonus
 
 
 
-
- new_montague = epic_tragedy[:montague]
- new_status = epic_tragedy[:montague][:hero]
- new_status.shift
- new_status << "dead"
- 
- epic_tragedy[:montague][:heroine][:hero][:status]
- 
+new_status = "dead"
+epic_tragedy[:montague][:hero][:status] = new_status
+ epic_tragedy[:capulet][:heroine][:status] = new_status
   
 
   #Don't touch the following line! The `bonus` method must return our newly modified epic tragedy hash
